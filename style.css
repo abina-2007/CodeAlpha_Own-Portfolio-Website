@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    scroll-behavior: smooth;
+    padding-top: 70px;
+}
+
+/* Navbar */
+nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-direction: row;
+
+    background: #333;
+
+    padding: 15px 30px;
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Navbar menu */
+nav ul {
+
+    display: flex;
+
+    flex-direction: row;
+
+    list-style: none;
+}
+
+nav ul li {
+
+    margin-left: 20px;
+}
+
+nav ul li a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+
+    color: cyan;
+}
+
+/* Hero Section */
+.hero {
+
+    height: 90vh;
+
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.hero p {
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+/* Sections */
+section {
+
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+/* Cards container */
+.card-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+/* Cards */
+.card {
+
+    background: #f4f4f4;
+
+    padding: 20px;
+
+    margin: 15px;
+
+    width: 220px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+
+    transform: scale(1.1);
+
+    background: #0072ff;
+
+    color: white;
+}
+
+/* Button */
+button, .btn {
+
+    padding: 12px 20px;
+
+    background: #0072ff;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+
+    background: black;
+}
+
+/* Resume Section Fix */
+#resume {
+
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.resume-text {
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+
+    font-size: 18px;
+}
+
+#resume .btn {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/* Contact Section Fix */
+#contact {
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+/* Fix contact text spacing */
+
+#contact p {
+
+    margin: 5px 0;
+
+    font-size: 18px;
+
+}
+
+/* Fix button alignment */
+
+.btn {
+
+    margin-top: 15px;
+
+    display: inline-block;
+
+}
+
+/* Responsive Design */
+@media(max-width:768px) {
+
+    nav {
+
+        flex-direction: column;
+    }
+
+    nav ul {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    nav ul li {
+
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+
+        font-size: 28px;
+    }
+
+    .card {
+
+        width: 90%;
+    }
+
+}
